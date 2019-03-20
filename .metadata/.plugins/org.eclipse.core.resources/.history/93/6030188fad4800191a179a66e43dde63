@@ -1,0 +1,7 @@
+package com.mtit.osgi.mathservicemaths;
+
+public interface MathService {
+	 
+	   public int sum(int a, int b);
+	 
+}

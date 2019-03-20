@@ -1,0 +1,47 @@
+package com.mtit.osgi.helloservice;
+
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.ServiceReference;
+
+import com.mtit.osgi.mathservicemaths.MathService;
+
+public class Activator implements BundleActivator {
+
+	private static BundleContext context;
+
+	static BundleContext getContext() {
+		return context;
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * @see org.osgi.framework.BundleActivator#start(org.osgi.framework.BundleContext)
+	 */
+	public void start(BundleContext bundleContext) throws Exception {
+		Activator.context = bundleContext;
+		System.out.println("Start MIT osgi service");
+		
+        ServiceReference<MathService> serviceReference = context
+                .getServiceReference(MathService.class);
+        MathService service = (MathService) context
+                .getService(serviceReference);
+        
+        System.out.println("Enter a value :");
+        int a = myscanner.nextInt();
+        System.out.println("5+3 = " + service.sum(a, 3));
+        
+		System.out.println("Math Consumer starting ...");
+		
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * @see org.osgi.framework.BundleActivator#stop(org.osgi.framework.BundleContext)
+	 */
+	public void stop(BundleContext bundleContext) throws Exception {
+		Activator.context = null;
+		System.out.println("Stop MIT osgi service");
+	}
+
+}

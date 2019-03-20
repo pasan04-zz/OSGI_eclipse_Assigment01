@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: MathConsumer
+Bundle-SymbolicName: com.mtit.osgi.MathConsumer
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.mtit.osgi.mathconsumer.Activator
+Bundle-Vendor: MTIT
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: com.mtit.osgi.mathservice.utils,
+ com.mtit.osgi.mathservicemaths,
+ org.osgi.framework;version="1.3.0"
+Automatic-Module-Name: com.mtit.osgi.MathConsumer

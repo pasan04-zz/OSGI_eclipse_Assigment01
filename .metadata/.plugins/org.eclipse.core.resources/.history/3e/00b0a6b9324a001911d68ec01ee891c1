@@ -1,0 +1,9 @@
+package com.mtit.osgi.mathservice.utils;
+
+public enum TableQueue {
+	
+	private int maxNoOfTable;
+	private int rear;
+	
+
+}

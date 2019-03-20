@@ -1,0 +1,22 @@
+package com.dsa.osgi.restaurantservice.utils;
+
+public class TableQueue {
+	
+	private int maxNoOfTable;
+	private int rear;
+	private int front;
+	private int[] queArray;
+	private int nItems;
+	
+	public TableQueue(int maxSize) {
+
+		this.maxNoOfTable = maxSize;
+		queArray = new int[maxSize];
+		nItems = 0;
+		front =0;
+		rear = -1;
+		
+	}
+	
+
+}

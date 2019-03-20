@@ -1,0 +1,18 @@
+package com.mtit.osgi.mathservice.utils;
+
+public class TableQueue {
+	
+	private int maxNoOfTable;
+	private int rear;
+	private int[] queArray;
+	private int nItems;
+	
+	public TableQueue(int maxSize) {
+
+		this.maxNoOfTable = maxSize;
+		
+		
+	}
+	
+
+}

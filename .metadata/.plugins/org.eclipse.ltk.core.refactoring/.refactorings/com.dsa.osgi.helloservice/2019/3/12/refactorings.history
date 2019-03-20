@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.mtit.osgi.helloservice&apos; to &apos;com.dsa.osgi.helloservice&apos;&#x0D;&#x0A;- Original project: &apos;com.mtit.osgi.helloservice&apos;&#x0D;&#x0A;- Original element: &apos;com.mtit.osgi.helloservice/src/com.mtit.osgi.helloservice&apos;&#x0D;&#x0A;- Renamed element: &apos;com.mtit.osgi.helloservice/src/com.dsa.osgi.helloservice&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.mtit.osgi.helloservice&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.mtit.osgi.helloservice" name="com.dsa.osgi.helloservice" qualified="false" references="true" stamp="1553082697339" textual="false" version="1.0"/>
+</session>

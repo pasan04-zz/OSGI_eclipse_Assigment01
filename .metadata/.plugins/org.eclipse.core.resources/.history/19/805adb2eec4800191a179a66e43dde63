@@ -1,0 +1,24 @@
+package com.mtit.osgi.mathservice.utils;
+
+import java.util.Scanner;
+
+public class MathUtils {
+	 
+	   public static int minus(int a, int b)  {
+		   
+		   Scanner myscanner = new Scanner(System.in);
+		   int c[] = new int[5];
+		   for(int i =0; i<5;i++) {
+
+			   System.out.println("Enter a number :");
+			   c[i] = myscanner.nextInt(); 
+			   	
+		   }
+		   for(int i=0;i<5;i++) {
+			   System.out.println(c[i]);
+		   }
+	       return a- b;
+	     
+	   }
+	   
+}

@@ -1,0 +1,11 @@
+package com.mtit.osgi.mathservicemaths.Impl;
+import com.mtit.osgi.mathservicemaths.*;
+
+public class MathServiceImpl implements MathService {
+	
+	   @Override
+	   public int sum(int a, int b) {
+	       return a+ b;
+	   }
+	 
+}
