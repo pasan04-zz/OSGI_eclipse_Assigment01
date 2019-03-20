@@ -58,7 +58,7 @@ public class TableQueue {
 	
 	public int peekFront() {
 		
-		if(nTable == 0) {
+		if(nTable ==0) {
 			System.out.println("The restaurant is empty");
 			return -99;
 		}

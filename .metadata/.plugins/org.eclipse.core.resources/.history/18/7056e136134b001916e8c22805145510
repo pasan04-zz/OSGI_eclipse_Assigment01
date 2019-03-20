@@ -28,9 +28,8 @@ public class Activator implements BundleActivator {
                 .getService(serviceReference);
         Scanner myscanner = new Scanner(System.in);
         int intialstate = 1;
-        int noOfTables = 2;
-        //creating an object from Tablequeue inorder to check the availabity of the table in the restaurant
-        TableQueue table = new TableQueue(noOfTables);
+        int noOfTables = 10;
+        
         while(intialstate != 0) {
         	
 	        System.out.println("~WELCOME TO OLIVE GARDEN RESTAURANT RESERVATION~");
@@ -47,18 +46,18 @@ public class Activator implements BundleActivator {
 	        
 	        //The restaurant having tables with maximum of 10 person(10 chairs)
 	        boolean allowAllocation = MathUtils.allocation(noOfPerson);
-
+	        
+	        //creating an object from Tablequeue inorder to check the availabity of the table in the restaurant
+	        TableQueue table = new TableQueue(noOfTables);
 	        if(allowAllocation == true) {
 	        	
 	        	if(table.isFull() == false) {
 		        	System.out.println("You can book the table !");
-		        	System.out.print("Do you want to exit or allocate another table(Press 0 to exit, press 1 to continue :");
-		        	intialstate = myscanner.nextInt();
-		        	table.allocateTable(noOfPerson);
+		        	intialstate = 0;	        		
 	        	}
 	        	else {       		
-		        	System.out.print("Do you want to exit or allocate another table(Press 0 to exit, press 1 to continue :");
-		        	intialstate = myscanner.nextInt();
+	        		table.allocateTable(noOfPerson);
+	        		intialstate =0;
 	        	}
 	        }
 	        else {
@@ -70,8 +69,9 @@ public class Activator implements BundleActivator {
         
         }
         
-         
-        System.out.println(table.peekFront());
+        
+        
+        
         System.out.println("Enter a value :");
         int a = myscanner.nextInt();
         System.out.println("5+3 = " + service.sum(a, 3));

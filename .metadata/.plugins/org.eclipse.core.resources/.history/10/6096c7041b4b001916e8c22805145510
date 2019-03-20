@@ -54,9 +54,9 @@ public class Activator implements BundleActivator {
 		        	System.out.println("You can book the table !");
 		        	System.out.print("Do you want to exit or allocate another table(Press 0 to exit, press 1 to continue :");
 		        	intialstate = myscanner.nextInt();
-		        	table.allocateTable(noOfPerson);
 	        	}
 	        	else {       		
+	        		table.allocateTable(noOfPerson);
 		        	System.out.print("Do you want to exit or allocate another table(Press 0 to exit, press 1 to continue :");
 		        	intialstate = myscanner.nextInt();
 	        	}
