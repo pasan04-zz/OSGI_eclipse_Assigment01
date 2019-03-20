@@ -3,7 +3,7 @@ package com.dsa.osgi.restaurantservice;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 
-import com.dsa.osgi.restaurantserviceresturant.MathService;
+import com.dsa.osgi.restaurantserviceresturant.RestaurantService;
 import com.mtit.osgi.restaturantservicerestaurant.Impl.MathServiceImpl;
 
 public class Activator implements BundleActivator {
@@ -17,21 +17,20 @@ public class Activator implements BundleActivator {
    public void start(BundleContext bundleContext) throws Exception {
        Activator.context = bundleContext;
         
-       System.out.println("Registry Service MathService...");
+       System.out.println("Registry Service Restaurant ...");
         
        this.registryMathService();
         
-       System.out.println("OSGi MathService Started");
+       System.out.println("OSGi Restaurant service Started");
    }
  
    private void registryMathService() {
-       MathService service = new MathServiceImpl();
-       context.registerService(MathService.class, service, null);
+       RestaurantService service = new MathServiceImpl();
+       context.registerService(RestaurantService.class, service, null);
    }
- 
    public void stop(BundleContext bundleContext) throws Exception {
        Activator.context = null;
-       System.out.println("OSGi MathService Stopped!");
+       System.out.println("OSGi Restaurant Service Stopped!");
    }
  
 }

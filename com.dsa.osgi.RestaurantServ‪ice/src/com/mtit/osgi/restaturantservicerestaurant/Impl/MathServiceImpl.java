@@ -1,7 +1,7 @@
 package com.mtit.osgi.restaturantservicerestaurant.Impl;
 import com.dsa.osgi.restaurantserviceresturant.*;
 
-public class MathServiceImpl implements MathService {
+public class MathServiceImpl implements RestaurantService {
 	
 	@Override
 	public int sum(int a, int b) {

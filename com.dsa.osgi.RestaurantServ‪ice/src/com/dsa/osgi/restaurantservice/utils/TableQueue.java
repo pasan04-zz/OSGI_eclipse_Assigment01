@@ -56,7 +56,7 @@ public class TableQueue {
 		}	
 	}
 	
-	public int peekFront() {
+	public int peekFrontTable() {
 		
 		if(nTable == 0) {
 			System.out.println("The restaurant is empty");

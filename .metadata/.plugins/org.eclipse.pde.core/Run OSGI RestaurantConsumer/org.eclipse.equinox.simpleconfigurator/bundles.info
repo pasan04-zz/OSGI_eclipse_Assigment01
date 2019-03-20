@@ -3,6 +3,7 @@
 ch.qos.logback.classic,1.0.7.v20121108-1250,file:/C:/Users/Pasan%20Kamburugamuwa/.p2/pool/plugins/ch.qos.logback.classic_1.0.7.v20121108-1250.jar,4,true
 ch.qos.logback.core,1.0.7.v20121108-1250,file:/C:/Users/Pasan%20Kamburugamuwa/.p2/pool/plugins/ch.qos.logback.core_1.0.7.v20121108-1250.jar,4,true
 ch.qos.logback.slf4j,1.0.7.v201505121915,file:/C:/Users/Pasan%20Kamburugamuwa/.p2/pool/plugins/ch.qos.logback.slf4j_1.0.7.v201505121915.jar,4,false
+com.dsa.osgi.RestaurantAdmin,1.0.0.qualifier,file:/C:/Users/Pasan%20Kamburugamuwa/eclipse-workspace04/com.dsa.osgi.RestaurantAdmin/,4,true
 com.dsa.osgi.RestaurantClient,1.0.0.qualifier,file:/C:/Users/Pasan%20Kamburugamuwa/eclipse-workspace04/com.dsa.osgi.RestaurantClient/,4,true
 com.dsa.osgi.RestaurantServ_ice,1.0.0.qualifier,file:/C:/Users/Pasan%20Kamburugamuwa/eclipse-workspace04/com.dsa.osgi.RestaurantServ‪ice/,4,true
 com.dsa.osgi.helloservice,1.0.0.qualifier,file:/C:/Users/Pasan%20Kamburugamuwa/eclipse-workspace04/com.dsa.osgi.helloservice/,4,true

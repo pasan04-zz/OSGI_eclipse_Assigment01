@@ -1,6 +1,6 @@
 package com.dsa.osgi.restaurantserviceresturant;
 
-public interface MathService {
+public interface RestaurantService {
 	 
 	   public int sum(int a, int b);
 	   public int multiplication(int a,int b);

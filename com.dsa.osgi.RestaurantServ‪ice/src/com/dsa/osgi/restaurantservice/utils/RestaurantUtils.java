@@ -2,7 +2,7 @@ package com.dsa.osgi.restaurantservice.utils;
 
 import java.util.Scanner;
 
-public class MathUtils {
+public class RestaurantUtils {
 	 
 	   public static boolean allocation(int a)  {   
 		   if(a >0 && a<= 10) {
