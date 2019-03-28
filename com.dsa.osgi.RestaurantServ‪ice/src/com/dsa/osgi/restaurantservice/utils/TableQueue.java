@@ -6,7 +6,7 @@ public class TableQueue {
 	private int rear;
 	private int front;
 	private int[] queArray;
-	private int nTable;
+	private static int nTable;
 	
 	
 	//Table allocation is going in a queue structure

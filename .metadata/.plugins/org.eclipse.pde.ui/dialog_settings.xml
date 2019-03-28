@@ -6,6 +6,7 @@
 	<item value="true" key="osgiProject"/>
 	<item value="true" key="generatePluginActivator"/>
 	<list key="providers">
+		<item value="DSA"/>
 		<item value="MTIT"/>
 	</list>
 	<section name="PDEFormActionManager">
@@ -22,5 +23,7 @@
 		</section>
 	</section>
 	<section name="quick_assist_proposal_size">
+	</section>
+	<section name="targetStateView">
 	</section>
 </section>

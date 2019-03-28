@@ -37,23 +37,10 @@ public class Activator implements BundleActivator {
         for(int i=1;i<=noOfTables;i++) {
             tablequeue.deallocateTable();
         }
-        System.out.println("Succesfully deallocated the "+ noOfTables+"tables");
-        
-        
-//      System.out.println("Enter a value :");
-//      int a = myscanner.nextInt();
-//      System.out.println("5+3 = " + service.sum(a, 3));
-//
-//      System.out.println("MathConsumer Started");
-//     
-//      System.out.println("5 * 6 = " + service.multiplication(5, 6));
-//      
-//      System.out.println("100/10 = " + service.division(100, 10));       
+        System.out.println("Succesfully deallocated the "+ noOfTables+"tables");  
 
         
 	}
-	
-	
 	public void stop(BundleContext bundleContext) throws Exception {
 		Activator.context = null;
 	}

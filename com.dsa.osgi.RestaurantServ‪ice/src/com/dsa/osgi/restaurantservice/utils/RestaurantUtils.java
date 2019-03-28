@@ -14,8 +14,7 @@ public class RestaurantUtils {
 	   }
 	   public static void calculatePrice(int type,int quantity,int price) {
 		   
-		  
-		   
+   
 		   
 	   }
 	   

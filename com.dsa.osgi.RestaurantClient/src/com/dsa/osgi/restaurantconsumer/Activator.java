@@ -3,7 +3,7 @@ package com.dsa.osgi.restaurantconsumer;
 import com.dsa.osgi.restaurantservice.utils.RestaurantUtils;
 import com.dsa.osgi.restaurantservice.utils.TableQueue;
 import com.dsa.osgi.restaurantserviceresturant.RestaurantService;
-
+import com.mtit.osgi.restaturantservicerestaurant.Impl.RestaurantServiceImpl;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -21,7 +21,7 @@ public class Activator implements BundleActivator {
  
     public void start(BundleContext bundleContext) throws Exception {
         Activator.context = bundleContext;
-        System.out.println("MathConsumer Starting...");
+        System.out.println("Restaurant client is starting...");
  
         ServiceReference<RestaurantService> serviceReference = context
                 .getServiceReference(RestaurantService.class);
@@ -36,7 +36,7 @@ public class Activator implements BundleActivator {
     	int noOfPerson = 0,bookingDate =0;
         while(intialstate != 0) {
         	
-	        System.out.println("~WELCOME TO OLIVE GARDEN RESTAURANT RESERVATION~");
+	        System.out.println("\n\n~WELCOME TO OLIVE GARDEN RESTAURANT RESERVATION~");
 	        System.out.println("================================================");
 
 	        try {
@@ -63,8 +63,25 @@ public class Activator implements BundleActivator {
 		        	System.out.print("Do you want to exit or allocate another table(Press 0 to exit, press 1 to continue :");
 		        	intialstate = myscanner.nextInt();
 		        	table.allocateTable(noOfPerson);
+		        	
+		        	if(intialstate == 0) {
+		    	        RestaurantService restaurant = new RestaurantServiceImpl();
+		    	        System.out.println("==========Thank you for allocating a table!!=============");
+		    	        System.out.println("=========================================================");
+		    	        restaurant.DisplayMenuList();
+		    	        try {
+			    	        System.out.print("Enter the meal time :");
+			    	        int mealTime = myscanner.nextInt();
+			    	        restaurant.selectMealType(mealTime);
+		    	        }catch(InputMismatchException e) {
+		    	        	e.printStackTrace();
+		    	        }
+		    	        	
+		    	        
+		        	}
 	        	}
-	        	else {       		
+	        	else {
+	        		System.out.println("Sorry, All the tables are allocated in this time");
 		        	System.out.print("Do you want to exit or allocate another table(Press 0 to exit, press 1 to continue :");
 		        	intialstate = myscanner.nextInt();
 	        	}
@@ -73,13 +90,8 @@ public class Activator implements BundleActivator {
 	        	System.out.println("Sorry, We do have tables containing maximum 10 seats !");
 	        	System.out.print("Do you want to exit(Press 0 to exit, press 1 to continue :");
 	        	intialstate = myscanner.nextInt();
-	        	
-	        }
-        
-        }
-        System.out.println(table.peekFrontTable());
-
-        
+	        }      
+        }     
     }
  
     public void stop(BundleContext bundleContext) throws Exception {

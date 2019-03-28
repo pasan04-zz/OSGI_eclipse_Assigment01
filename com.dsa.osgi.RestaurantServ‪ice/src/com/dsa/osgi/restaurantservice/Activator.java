@@ -4,7 +4,7 @@ import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 
 import com.dsa.osgi.restaurantserviceresturant.RestaurantService;
-import com.mtit.osgi.restaturantservicerestaurant.Impl.MathServiceImpl;
+import com.mtit.osgi.restaturantservicerestaurant.Impl.RestaurantServiceImpl;
 
 public class Activator implements BundleActivator {
  
@@ -25,7 +25,7 @@ public class Activator implements BundleActivator {
    }
  
    private void registryMathService() {
-       RestaurantService service = new MathServiceImpl();
+       RestaurantService service = new RestaurantServiceImpl();
        context.registerService(RestaurantService.class, service, null);
    }
    public void stop(BundleContext bundleContext) throws Exception {

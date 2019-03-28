@@ -2,9 +2,13 @@ package com.dsa.osgi.restaurantserviceresturant;
 
 public interface RestaurantService {
 	 
-	   public int sum(int a, int b);
-	   public int multiplication(int a,int b);
-	   public int division(int a,int b);
+	   public void DisplayMenuList();
+	   public void selectMealType(int type);
+	   public void displaycalculatingDetails(); //This is used to display the common calculating details 
+	   public double calculateBreakfastPrice();
+	   public double calculateLunchPrice();
+	   public double calculateDinnerPrice();
+
 	   
 	   
 	 
