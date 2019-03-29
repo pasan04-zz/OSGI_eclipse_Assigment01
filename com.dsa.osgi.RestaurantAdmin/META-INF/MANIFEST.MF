@@ -8,5 +8,6 @@ Bundle-Vendor: DSA
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Import-Package: com.dsa.osgi.restaurantservice.utils,
  com.dsa.osgi.restaurantserviceresturant,
+ com.mtit.osgi.restaturantservicerestaurant.Impl,
  org.osgi.framework;version="1.3.0"
 Automatic-Module-Name: com.dsa.osgi.RestaurantAdmin

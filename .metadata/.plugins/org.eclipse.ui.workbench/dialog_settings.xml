@@ -20,4 +20,6 @@
 			<item value="org.eclipse.pde.PDE"/>
 		</list>
 	</section>
+	<section name="ImportExportAction">
+	</section>
 </section>

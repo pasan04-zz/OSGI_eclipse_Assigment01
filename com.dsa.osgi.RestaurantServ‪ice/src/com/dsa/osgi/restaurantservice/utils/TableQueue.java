@@ -3,9 +3,9 @@ package com.dsa.osgi.restaurantservice.utils;
 public class TableQueue {
 	
 	private int maxNoOfTable;
-	private int rear;
-	private int front;
-	private int[] queArray;
+	private static int rear;
+	private static int front;
+	private static int[] queArray;
 	private static int nTable;
 	
 	

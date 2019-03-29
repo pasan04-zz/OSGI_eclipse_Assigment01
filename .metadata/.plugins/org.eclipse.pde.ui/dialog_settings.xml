@@ -22,6 +22,8 @@
 			<item value="191" key="DIALOG_Y_ORIGIN"/>
 		</section>
 	</section>
+	<section name="PluginExportWizard">
+	</section>
 	<section name="quick_assist_proposal_size">
 	</section>
 	<section name="targetStateView">

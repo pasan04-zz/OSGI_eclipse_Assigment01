@@ -3,8 +3,11 @@
 <fullyQualifiedTypeName name="com.mtit.osgi.mathservicemaths.Impl.MathServiceImpl"/>
 <fullyQualifiedTypeName name="com.mtit.osgi.mathservicemaths.MathService"/>
 <fullyQualifiedTypeName name="com.dsa.osgi.restaurantservice.utils.TableQueue"/>
-<fullyQualifiedTypeName name="com.dsa.osgi.restaurantserviceresturant.RestaurantService"/>
 <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+<fullyQualifiedTypeName name="com.dsa.osgi.restaurantserviceresturant.RestaurantService"/>
+<fullyQualifiedTypeName name="com.mtit.osgi.restaturantservicerestaurant.Impl.RestaurantServiceImpl"/>
 </qualifiedTypeNameHistroy>

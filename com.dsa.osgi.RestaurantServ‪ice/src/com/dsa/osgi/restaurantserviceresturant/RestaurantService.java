@@ -8,8 +8,10 @@ public interface RestaurantService {
 	   public double calculateBreakfastPrice();
 	   public double calculateLunchPrice();
 	   public double calculateDinnerPrice();
-
-	   
-	   
+	   public void getFoodItems(String foodsName,double price);
+	   public void displayFoodItems();
+	   public double calculateFoodPrice(int foodNo,int quantity);
+	   public void orderedList();
+	   public void printBill();
 	 
 }
