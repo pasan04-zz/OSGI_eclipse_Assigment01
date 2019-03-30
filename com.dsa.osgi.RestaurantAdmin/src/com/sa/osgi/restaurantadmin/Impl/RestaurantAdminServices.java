@@ -16,7 +16,7 @@ public class RestaurantAdminServices implements RestaurnatAdmin {
 		String  food = null;
 		Scanner myscanner = new Scanner(System.in);
 		System.out.print("Please enter the food Item name(If no, please enter NO) :");
-		food = myscanner.nextLine();
+		food = myscanner.next();
 		System.out.print("Enter the selling price of "+food +" :");
 		double price = myscanner.nextDouble();
 		System.out.println("Successfully added...\n");	
@@ -53,16 +53,16 @@ public class RestaurantAdminServices implements RestaurnatAdmin {
 	@Override
 	public void priceChanging() {
 		// TODO Auto-generated method stub
-
-		Scanner myscanner = new Scanner(System.in);
-		System.out.println("==== Your Food List ====");
-		RestaurantService restService = new RestaurantServiceImpl();
-		restService.displayFoodItems();
-		System.out.print(" Select the item that you want to price changing(Enter the number) :");
-		int number = myscanner.nextInt();
-		
-		
-		
+		int number =1;
+		while(number != 0) {
+			
+			Scanner myscanner = new Scanner(System.in);
+			System.out.println("==== Your Food List ====");
+			RestaurantService restService = new RestaurantServiceImpl();
+			restService.displayFoodItems();
+			System.out.print(" Select the item that you want to price changing(Enter the number or enter 0 to exit) :");
+			number = myscanner.nextInt();
+		}	
 	}
 
 	

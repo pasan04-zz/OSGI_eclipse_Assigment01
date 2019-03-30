@@ -33,13 +33,16 @@ public class Activator implements BundleActivator {
         System.out.println("================================================");
         
         RestaurantConsumer restConsumer = new RestaurantConsumerServices();
+        RestaurantService restService = new RestaurantServiceImpl();
         restConsumer.allocatingTable();
         restConsumer.calculatingprice();
         Scanner myscanner = new Scanner(System.in);
         System.out.print("Do you want a bill(Enter 1 to get the bill, if not enter 0) :");
         int printBill = myscanner.nextInt();
         if(printBill == 1) {
-        	restConsumer.printBill();  	
+        	restService.printBill();
+        	System.out.println("Your bill is printed !");
+        	System.out.println("\nThank you. See you again ........");
         }
         else {	
         	System.out.println("Thank you. See you again ........");

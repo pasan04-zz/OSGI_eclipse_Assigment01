@@ -40,7 +40,6 @@ public class TableQueue {
 	
 	public int deallocateTable() {
 		if(nTable ==0) {
-			System.out.println("All the tables are not allocated !");
 			return -99;
 		}
 		else {

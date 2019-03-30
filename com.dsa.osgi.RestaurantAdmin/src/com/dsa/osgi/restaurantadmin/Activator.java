@@ -41,13 +41,28 @@ public class Activator implements BundleActivator {
         while(option != 0) {
 	        switch(option) {
 	        	case 1 :{
+	      
 	                System.out.print("How many tables do you want to deallocate :"); 
 	                int noOfTables = myscanner.nextInt();
+	                int deallocateTables =0;
 	                for(int i=1;i<=noOfTables;i++) {
-	                    tablequeue.deallocateTable();
+	                   deallocateTables= tablequeue.deallocateTable();
 	                }
-	                System.out.println("Succesfully deallocated "+ noOfTables+" tables");  
-	                System.out.println(" ");
+	                if(deallocateTables == -99) {
+	                	
+	                	System.out.println("\nError!, All the tables are not allocated yet!\n");
+	        	        System.out.println("====== Select option ======");
+	        	        System.out.println("   1. If the tables are empty, deallocate a table(Enter 1) ");       
+	        	        System.out.println("   2. Add Foods to the menu(Enter 2)");
+	        	        System.out.print("Enter the option you want to change(press 0 to exit) :");
+	        	        option = myscanner.nextInt();
+	        	        
+	                	break;
+	                }
+	                else {
+		                System.out.println("Succesfully deallocated "+ noOfTables+" tables");  
+		                System.out.println(" ");
+	                }
 	                break;
 	        	}
 	        	case 2:{
@@ -64,16 +79,21 @@ public class Activator implements BundleActivator {
 	                else {
 	                	System.out.println("-------------- Price changing interface ---------");
 	                	restAdmin.priceChanging();
+	        	        System.out.println("====== Select option ======");
+	        	        System.out.println("   1. If the tables are empty, deallocate a table(Enter 1) ");       
+	        	        System.out.println("   2. Add Foods to the menu(Enter 2)");
+	        	        System.out.print("Enter the option you want to change(press 0 to exit) :");
+	        	        option = myscanner.nextInt();
 	                break;
 	        	} 
 
 	        }
 	        System.out.println("====== Select option ======");
-	        System.out.println("   1. Deallocate a table(Enter 1) ");       
+	        System.out.println("   1. If the tables are empty, deallocate a table(Enter 1) ");       
 	        System.out.println("   2. Add Foods to the menu(Enter 2)");
 	        System.out.print("Enter the option you want to change(press 0 to exit) :");
 	        option = myscanner.nextInt();
-	        }
+	        }  
         }
 
       

@@ -22,12 +22,14 @@ public class RestaurantConsumerServices implements RestaurantConsumer{
         Scanner myscanner = new Scanner(System.in);
         int intialstate = 1;
         int noOfTables = 4;
-        
+    	RestaurantService rest = new RestaurantServiceImpl();        
         //creating an object from Tablequeue inorder to check the availabity of the table in the restaurant
         TableQueue table = new TableQueue(noOfTables);
     	int noOfPerson = 0;
     	System.out.print("\nCustomer name :");
     	String name = myscanner.next();
+    	rest.receiveCustomerName(name);
+    	
         while(intialstate != 0) {
 	        try {
 	        	System.out.print("\nEnter number of persons :");
@@ -68,7 +70,7 @@ public class RestaurantConsumerServices implements RestaurantConsumer{
 	        }      
         } 
         System.out.println("===== Menu Item List ======");
-    	RestaurantService rest = new RestaurantServiceImpl();
+
     	rest.displayFoodItems();
 		
 	
@@ -84,7 +86,7 @@ public class RestaurantConsumerServices implements RestaurantConsumer{
 		int foodItemNo = myscanner.nextInt();
 		int quantity =0;
 		if(foodItemNo !=0) {
-			System.out.print("Quantity :");
+			System.out.print("Please enter the quantity :");
 			quantity = myscanner.nextInt();				
 		}
     	RestaurantService rest = new RestaurantServiceImpl();	
@@ -94,7 +96,7 @@ public class RestaurantConsumerServices implements RestaurantConsumer{
 			   System.out.print("\nEnter the food item number you want(Enter 0 to exit) :");
 			   foodItemNo = myscanner.nextInt();
 			   if(foodItemNo != 0) {
-				   System.out.print("Quantity :");
+				   System.out.print("Please enter the quantity :");
 				   quantity = myscanner.nextInt();
 			   }
 		}
@@ -106,41 +108,8 @@ public class RestaurantConsumerServices implements RestaurantConsumer{
 			
 			System.out.println("Thank you. Come Again");
 		}
-		
-		
-		
-		
-		
-	}
-	
-	@Override
-	public void printBill() {
-		// TODO Auto-generated method stub
-		
-		PrintWriter writer;
-		try {
-			writer = new PrintWriter("RestaurantBill.txt", "UTF-8");
-			writer.println("The first line");
-			writer.println("The second line");
-			writer.close();
 			
-		} catch (FileNotFoundException e) {
-
-			e.printStackTrace();
-		} catch (UnsupportedEncodingException e) {
-
-			e.printStackTrace();
-		}
-
-		
 	}
 
-
-	
-	
-	
-	
-	
-	
 
 }

@@ -5,6 +5,4 @@ public interface RestaurantConsumer {
 	
 	public void allocatingTable();
 	public void calculatingprice();
-	public void printBill();
-
 }
