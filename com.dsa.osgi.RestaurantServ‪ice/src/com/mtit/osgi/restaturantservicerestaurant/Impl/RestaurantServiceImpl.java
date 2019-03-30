@@ -199,14 +199,6 @@ public class RestaurantServiceImpl implements RestaurantService {
             w.close(); 
         } catch (IOException e) {
             System.err.println("Problem writing to the file statsTest.txt");
-        }
-
-		
+        }	
 	}
-
-
-
-	
-
-	
 }
