@@ -162,7 +162,8 @@ public class RestaurantServiceImpl implements RestaurantService {
 		
         try {
             //In here there will be generate a bill including all the details client has added.
-            File statText = new File("E:/ajax_tutorial/RestaurantBill.txt");
+//            File statText = new File("E:/ajax_tutorial/RestaurantBill.txt");
+            File statText = new File("E:/RestaurantBill.txt");
             FileOutputStream is = new FileOutputStream(statText);
             OutputStreamWriter osw = new OutputStreamWriter(is);    
             Writer w = new BufferedWriter(osw);
