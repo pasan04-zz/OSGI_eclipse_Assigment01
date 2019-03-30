@@ -10,5 +10,7 @@ public interface RestaurantService {
 	   public void orderedList();
 	   public void printBill();
 	   public void receiveCustomerName(String Name);
+	   public boolean priceChangingInterface(int number,double newprice);
+//	   public void gettingNewPrice(double newprice);
 	 
 }

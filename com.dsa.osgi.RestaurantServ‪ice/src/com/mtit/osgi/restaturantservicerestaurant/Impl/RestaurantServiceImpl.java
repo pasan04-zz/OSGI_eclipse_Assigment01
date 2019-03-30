@@ -201,4 +201,41 @@ public class RestaurantServiceImpl implements RestaurantService {
             System.err.println("Problem writing to the file statsTest.txt");
         }	
 	}
+	
+//	double newPrice = 0;
+//	@Override
+//	public void gettingNewPrice(double newprice) {
+//		// TODO Auto-generated method stub
+//		
+//		newPrice = newprice;
+//		
+//	}
+
+	@Override
+	public boolean priceChangingInterface(int number,double newprice) {
+		// TODO Auto-generated method stub
+		
+		int arrayNumber = number-1;
+			
+		if(arrayItems[arrayNumber] == null) {
+				
+			System.out.println("\nError!, There is no item for number " + number+" !");
+			return false;
+		}
+		else {
+			
+//			String arrayNumberString = String.valueOf(arrayNumber);
+			for(int i =0;i<5;i++) {
+				
+				if(i == arrayNumber) {
+					arrayItemsPrice[i] = newprice;
+				}
+				
+			}
+			return true;
+		}
+		
+	}
+
+
 }

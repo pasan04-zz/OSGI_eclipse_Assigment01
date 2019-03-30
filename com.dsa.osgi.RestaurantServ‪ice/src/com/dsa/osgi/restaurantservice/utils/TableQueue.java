@@ -2,11 +2,11 @@ package com.dsa.osgi.restaurantservice.utils;
 
 public class TableQueue {
 	
-	private int maxNoOfTable;
-	private static int rear;
-	private static int front;
-	private static int[] queArray;
-	private static int nTable;
+	int maxNoOfTable;
+	static int rear = -1;
+	static int front =0;
+	static int[] queArray;
+	static int nTable=0;
 	
 	
 	//Table allocation is going in a queue structure
@@ -16,9 +16,6 @@ public class TableQueue {
 
 		this.maxNoOfTable = maxSize;
 		queArray = new int[maxSize];
-		nTable = 0;
-		front =0;
-		rear = -1;	
 	}
 	public void allocateTable(int j) {
 		

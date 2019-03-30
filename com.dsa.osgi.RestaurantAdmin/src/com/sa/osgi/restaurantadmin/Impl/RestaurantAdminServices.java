@@ -53,15 +53,37 @@ public class RestaurantAdminServices implements RestaurnatAdmin {
 	@Override
 	public void priceChanging() {
 		// TODO Auto-generated method stub
-		int number =1;
+		Scanner myscanner = new Scanner(System.in);
+		RestaurantService restService = new RestaurantServiceImpl();
+		restService.displayFoodItems();		
+		System.out.print("Select the item that you want to price changing(Enter the number(1 to 5) or enter 0 to exit) :");
+		int number = myscanner.nextInt();		
+		double newPrice =0;
+		boolean success = true;
 		while(number != 0) {
+			if(number <= 5 && number >=1) {
+				System.out.print("Enter the price of the food number " +number + " :");
+				newPrice = myscanner.nextDouble();
+//				restService.gettingNewPrice(newPrice);
+				success = restService.priceChangingInterface(number,newPrice);
+				if(success == true) {
+					System.out.println("Succesfully Updated the Price List !");
+					System.out.println("==== Your UPDATED Food List ====");
+					restService.displayFoodItems();
+				}
+				else {
+					System.out.println("Not succesfully updated the Price List !!");
+					number =1;
+					
+				}
+			}
+			else {	
+				System.out.println("Error!(Enter number between 1 to 5) :");
+				
+			}
+			System.out.print("Select the item that you want to price changing(Enter the number(1 to 5) or enter 0 to exit) :");
+			number = myscanner.nextInt();	
 			
-			Scanner myscanner = new Scanner(System.in);
-			System.out.println("==== Your Food List ====");
-			RestaurantService restService = new RestaurantServiceImpl();
-			restService.displayFoodItems();
-			System.out.print(" Select the item that you want to price changing(Enter the number or enter 0 to exit) :");
-			number = myscanner.nextInt();
 		}	
 	}
 

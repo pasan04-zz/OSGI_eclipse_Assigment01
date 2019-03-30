@@ -6,8 +6,23 @@
 <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+<fullyQualifiedTypeName name="com.dsa.osgi.restaurantadmin.RestaurnatAdmin"/>
+<fullyQualifiedTypeName name="com.sa.osgi.restaurantadmin.Impl.RestaurantAdminServices"/>
+<fullyQualifiedTypeName name="com.sa.osgi.restaurantconsumer.consumer.RestaurantConsumer"/>
+<fullyQualifiedTypeName name="com.sa.osgi.restaurantconsumer.Impl.RestaurantConsumerServices"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="com.dsa.osgi.restaurantserviceresturant.RestaurantService"/>
 <fullyQualifiedTypeName name="com.mtit.osgi.restaturantservicerestaurant.Impl.RestaurantServiceImpl"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.io.FileOutputStream"/>
+<fullyQualifiedTypeName name="java.io.OutputStreamWriter"/>
+<fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="java.io.Writer"/>
+<fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
+<fullyQualifiedTypeName name="java.time.LocalDateTime"/>
 </qualifiedTypeNameHistroy>
