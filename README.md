@@ -15,3 +15,6 @@ We declare that this project report or any part of it was not copied from any ot
 <h3>Introduction</h3>
 1. Microkernel Architecture
 The microkernel architecture pattern mainly consists of two types of components. They are core system and plug-in modules. Application functionalities are divided between independent bundles as known as plug-in modules and the basic core system.
+
+
+<h2> You can download the full project report. It is in the repository named - <b><i>Report-SA Assignment.pdf</i></b></h2>
